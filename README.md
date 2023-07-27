@@ -4,7 +4,7 @@ Ce projet a été réalisé pour ma certification Le Wagon. J'ai reçu des direc
 
 ## Description du projet
 
-C'est une application web qui permet aux utilisateurs de publier des articles en indiquant leur source ou de parcourir l'actualité en échangeant avec les autres utilisateurs dans une section commentaires.
+C'est une application web qui permet aux utilisateurs de publier des articles en mentionnant l'URL source ou de parcourir l'actualité en échangeant avec les autres utilisateurs dans une section commentaires.
 
 L'application a été développée en utilisant les technologies suivantes :
 

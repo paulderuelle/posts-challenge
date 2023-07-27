@@ -1,4 +1,4 @@
-# Instructions de Certification
+# Certification
 
 Ce projet a été réalisé pour ma certification Le Wagon. J'ai reçu des directives détaillées sur les fonctionnalités à implémenter, le design à suivre et les technologies à utiliser. J'ai également reçu un brief spécifiant que j'avais un temps limité de 8 heures pour coder l'application.
 

@@ -1,0 +1,49 @@
+<div class="row mx-auto text-center" style="width: 77%">
+  <div class="form-container">
+    <h1 class="show-title"><%= @post.title %></h1>
+    <p class="show-content"><%= @post.content %></p>
+    <% if @post.url.present? %>
+      <p class="show-url"><%= link_to "> Consulter la source", @post.url, target: "_blank", style: "text-decoration: none; color: black;" %></p>
+    <% end %>
+  </div>
+</div>
+
+<div class="row mx-auto text-center" style="width: 77%">
+  <div class="form-container">
+    <div class="comments-container">
+      <i class="fa-solid fa-comments fa-xl"></i>
+      <% if @post.comments.count == 0 %>
+        <h2>No comment</h2>
+      <% elsif @post.comments.count == 1 %>
+        <h2>1 comment</h2>
+      <% else %>
+        <h2><%= @post.comments.count %> comments</h2>
+      <% end %>
+    </div>
+
+<div class="comment-form">
+  <%= form_for [@post, @comment] do |f| %>
+    <div class="comment-input">
+      <%= f.text_area :content, placeholder: "Participez à la conversation...", class: "form-control row mx-auto comment-form" %>
+    </div>
+    <div class="comment-submit">
+      <%= f.submit class: "my-btn", value: "Poster" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="separator">
+  <p class="separator-text">ALL COMMENTS</p>
+</div>
+
+  <% if @comments.present? %>
+    <% @comments.each do |comment| %>
+      <h3 class="comment-nickname"><%= comment.user.nickname %></h3>
+      <p class="comment-content"><%= comment.content %></p>
+    <% end %>
+  <% else %>
+    <p class="comment-content">No comments yet.</p>
+  <% end %>
+
+  </div>
+</div>

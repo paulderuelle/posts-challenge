@@ -1,0 +1,17 @@
+<div class="row mx-auto text-center" style="width: 77%">
+  <% @posts.each do |post| %>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="post-card">
+        <%= link_to post_path(post), style: "text-decoration: none; color: black;" do %>
+          <%= image_tag post.image.present? ? post.image : 'papernews.jpg', class: "card-img-top img-fluid" %>
+          <div class="post-card-body">
+            <h2 class="post-title"><%= post.title %></h2>
+            <p class="post-text"><%= post.content %></p>
+            <i class="fa-solid fa-comments"></i>
+            <span class="comment-count"><%= post.comments.count %></span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

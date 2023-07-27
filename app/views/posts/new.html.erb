@@ -1,0 +1,14 @@
+<div class="row mx-auto text-center" style="width: 77%">
+  <div class="form-container">
+    <h1 class="title-form">YOUR PAPER</h1>
+      <div class="my-form">
+        <%= form_for @post, html: { multipart: true } do |f| %>
+              <%= f.text_field :title, required: true, placeholder: "Title of your article...", class: "form-control row mx-auto", style:"width: 50%" %>
+              <%= f.text_area :content, required: true, placeholder: "Content of your article...", class: "form-control row mx-auto", style:"width: 50%" %>
+              <%= f.text_field :url, required: true, pattern: "https?://.+", placeholder: "Link to your source...", class: "form-control row mx-auto", style:"width: 50%" %>
+              <%= f.file_field :image, class: "form-control row mx-auto", style: "width: 50%" %>
+              <%= f.submit "Publish", class: "my-btn", disabled: @post.errors.any? %>
+        <% end %>
+      </div>
+  </div>
+</div>

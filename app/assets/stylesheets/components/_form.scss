@@ -1,0 +1,40 @@
+.form-container {
+  margin-top: 64px;
+  padding: 40px 0 40px 0;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+}
+.form-links {
+  text-align: center;
+}
+.form-link {
+  margin: 20px;
+}
+.my-form .form-control {
+  margin-bottom: 24px;
+}
+.comments-container {
+  display: flex;
+  align-items: center;
+  .fa-comments {
+    margin: 0 12px 0 56px;
+  }
+}
+.comment-form {
+  margin: 0 0 12px 56px;
+  display: flex;
+}
+.comment-input {
+  width: 400px;
+  text-align: left;
+}
+.comment-submit {
+  text-align: left;
+}
+.separator {
+  border-bottom: 2px solid rgb(200, 200, 200);
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-top: 42px;
+}

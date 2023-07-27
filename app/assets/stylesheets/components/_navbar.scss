@@ -1,12 +1,34 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #D8D9DE;
+  z-index: 10;
 }
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-logo {
+  max-height: 80px;
+  width: auto;
+  position: relative;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.brand-title {
+  position: absolute;
+  left: 48px;
+  top: 8px;
+}
+.post-search {
+  width: 500px;
+  height: 35px;
+}
+.search-btn {
+  height: 16px;
+  margin: 0 0 -2px -22px;
+}
+.navbar-button {
+  margin-right: 16px;
+}
+.navbar-icons {
+  margin-right: 24px;
+  .fa-plus {
+    margin-right: 12px;
+  }
 }

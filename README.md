@@ -10,7 +10,7 @@ L'application a été développée en utilisant les technologies suivantes :
 
 - Back-end : RubyOnRails avec un template utilisant Devise pour gérer le modèle User
 - Base de données : PostgreSQL
-- Front-end : HTML, CSS
+- Front-end : HTML, CSS, bootstrap
 
 ## Conclusion
 

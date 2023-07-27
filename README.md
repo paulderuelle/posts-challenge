@@ -14,8 +14,7 @@ L'application a été développée en utilisant les technologies suivantes :
 
 ## Conclusion
 
-Ce projet de certification a été une expérience enrichissante qui m'a permis de mettre en pratique les compétences acquises tout au long de ma formation. J'ai acquis une meilleure compréhension du processus de développement d'une application web dans un cadre contraint.
-
+Ce projet de certification m'a permis de mettre en pratique les compétences acquises tout au long de ma formation dans un temps limité avec des contraintes extérieures.
 N'hésitez pas à visiter l'application déployée à l'adresse suivante :
 
 Merci d'avoir pris le temps de découvrir mon projet de certification !
